@@ -1,0 +1,55 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 0;
+    margin: 0;
+}
+
+/* header-area start*/
+.header-area {
+    background-image: url(https://p8a6a4d3.rocketcdn.me/wp-content/uploads/2021/07/tenleemedia-slide.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
+.nav-link {
+  padding-right: 30px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  background-color: #e9204f;
+  color: white;
+  width: 0px;
+  height: 2px;
+  transition: 0.3s;
+}
+.nav-link:hover::after {
+  width: 20px;
+  transition: 0.3s;
+}
+.active::after {
+    width: 20px;
+}
+/* 991-1024 */
+@media only screen and (max-width: 1023px) {
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+
+/* free-strategy-session-btn */
+.free-strategy-session {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
