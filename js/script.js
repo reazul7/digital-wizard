@@ -29,3 +29,19 @@ var isAlreadyRun = false;
           }); 
       
       });
+
+
+// mail
+function sendMail(params) {
+    var tempParams = {
+        name:document.getElementById("toName").value,
+        phone:document.getElementById("toPhone").value,
+        email:document.getElementById("toEmail").value,
+        url:document.getElementById("toURL").value,
+    };
+
+    emailjs.send('gmail', 'template_taps7jq', tempParams)
+    .then(function(res){
+        console.log("success", res.status);
+    })
+}
