@@ -513,3 +513,37 @@ bottom: -100%;
     display: none;
   }
 }
+
+
+/* rounded-bg */
+.rounded-bg{
+  background-color: #3FDAF3;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #3FDAF3;
+  box-shadow: 1px 0 10px 0 #3FDAF3;
+  margin: 0 10px 0 0;
+  border-radius: 50% 50% 50% 50%;
+  height: 400px;
+}
+.rounded-hover:hover{
+/* transform: scale(1.1); */
+/* -webkit-transform: scale(1.1); */
+/* -moz-transform: scale(1.1); */
+/* -ms-transform: scale(1.1); */
+/* -o-transform: scale(1.1); */
+transform: scale(1.1);
+transition-duration: 0.4s;
+}
+
+
+
+/*--------------------------- Form Border ---------------------------*/
+.from-border{
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 12%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60px;
+  /* clip-path: polygon(0 0, 100% 82%, 100% 100%, 0% 100%); */
+}

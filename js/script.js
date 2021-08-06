@@ -32,16 +32,22 @@ var isAlreadyRun = false;
 
 
 // mail
-function sendMail(params) {
-    var tempParams = {
-        name:document.getElementById("toName").value,
-        phone:document.getElementById("toPhone").value,
-        email:document.getElementById("toEmail").value,
-        url:document.getElementById("toURL").value,
-    };
+function sendMail(params){
+    var temParams = {
+        to_name: document.getElementById('toName').value,
+        to_phone: document.getElementById('phone').value,
+        to_email: document.getElementById('email').value,
+        to_url: document.getElementById('url').value
+   };
+   emailjs.send('service_7zdiv3p','template_rxjapqf',temParams, 'user_PsmRntaXM3mRIYeOJL9bk')
+   .then(function(res){
+       console.log('success',res.status);
+       alert('Email Send Successfully')
 
-    emailjs.send('gmail', 'template_taps7jq', tempParams)
-    .then(function(res){
-        console.log("success", res.status);
+       let elementsAllInputs = document.getElementsByClassName("form-control")
+       for (let index = 0; index < elementsAllInputs.length; index++) {
+           const element = elementsAllInputs[index];
+           element.value="";
+       }
     })
 }
